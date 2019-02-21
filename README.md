@@ -8,7 +8,7 @@ Nosotros realizamos una petición GET a la página.
 ### ¿Qué código de estatus devuelve?
 La primera vez devuelve un código 200 ok, si recargas la página un 302 Found.
 ### ¿Qué DNS tiene el servidor?
-El servidor es OpenCms/9.5.3.
+
 ### ¿Qué IP tiene tiene el servidor?
 93.188.137.123:80
 ### ¿La página tiene alguna cookie?, ¿Cuáles?.
@@ -35,7 +35,7 @@ Nosotros realizamos una petición GET a la página.
 ### ¿Qué código de estatus devuelve?
 La primera vez devuelve un código 200 ok, si recargas la página un 302 Found.
 ### ¿Qué DNS tiene el servidor?
-El servidor es Apache.
+
 ### ¿Qué IP tiene tiene el servidor?
 93.188.137.126:443
 ### ¿La página tiene alguna cookie?, ¿Cuáles?.
