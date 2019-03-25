@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pagina de incio</title>
+
+  <link href="style.css" type="text/css" rel="stylesheet"  media="screen,projection"/>
+
+</head>
+
+<body>
+  <h1>Buscar parrafos, links y elementos ul</h1>
+  <p class="parrafo">Esto es un parrafo</p>
+  <a class="enlace" href="https://www.w3schools.com">Visit W3Schools.com!</a>
+  <p class="parrafo">Segundo parrafo. Separaremos los elementos por colores para que sea facil para el usuario distinguirlos...</p>
+  <ul class="lista">
+    <li type="circle">Verde = Parrafos</li>
+    <li type="square">Rojo = ul</li>
+    <li type="disc">Azul = <a class = "enlace" href="https://es.wikipedia.org/wiki/Link">Link</a></li>
+  </ul>
+  <p class="parrafo">Tercer parrafo, al que le añado un enlace a <a class="enlace" href="https://es.wikipedia.org/wiki/Wikipedia:Portada">wikipedia</a></p>
+  <p class="parrafo">Segunda lista, cuarto parrafo</p>
+  <ul class="lista">
+    <li type="circle">Esto es un tipo de punto.</li>
+    <li type="square">Este es otro.</li>
+    <li type="disc">Y este es otro diferente.</li>
+  </ul>
+  <p class="parrafo">Quinto parrafo, click en los botones de abajo para conocer el numero de elementos</p>
+  <button id="total_parrafos" onClick="mostrar_p()">Numero de parrafos..</button>
+  <button id="total_enlaces" onClick="mostrar_e()">Numero de enlaces..</button>
+  <button id="total_listas" onClick="mostrar_l()">Numero de listas..</button>
+  <script src="java.js"></script>
+</body>
+
+</html>
