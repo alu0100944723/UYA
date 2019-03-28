@@ -1,13 +1,15 @@
 
 function calculo()
 {
-	var text='{"productos":[' +
-'{"name":"Leche","precio":0.99,"cantidad":2},' +
-'{"name":"Café","precio":2.99,"cantidad":2 },' +
-'{"name":"Azúcar","precio":0.99,"cantidad":2},'+
-'{"name":"Servilletas","precio":1.99,"cantidad":2},'+
-'{"name":"Pan","precio":1,"cantidad":4 }]}';
-	var obj = JSON.parse(text);
+		var text={"productos":[ 
+{"name":"Leche","precio":0.99,"cantidad":2}, 
+{"name":"Café","precio":2.99,"cantidad":2 }, 
+{"name":"Azúcar","precio":0.99,"cantidad":2},
+{"name":"Servilletas","precio":1.99,"cantidad":2},
+{"name":"Pan","precio":1,"cantidad":4 }]};
+	var string = JSON.stringify(text);
+	var obj= JSON.parse(string);
+	
 	var i;
 	var texto="";
 	var calculos=0;
