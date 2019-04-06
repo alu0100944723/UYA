@@ -6,13 +6,21 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <title>Ejercicio 4</title>
     </head>
-    <body onLoad="calculo()">
-        <h1>Importe de la compra de productos.</h1>
-		<p id="nombres"></p>
-		<p id="subtotal"></p>
-		<p id="igic"></p>
-		<p id="total"></p>
-    <script src="productos.js"></script>
+    <body onload="mostrar_productos()">
+      
+      
+      <h1>Listado de productos:</h1>
+		    <p id="nombres"></p>
+      
+      <h2>Elige la cantidad de productos que deseas comprar: </h2>
+      <p>Leche <input type="text" id="p1" /></p>
+      <p>Café <input type="text" id="p2" /></p>
+      <p>Azúcar <input type="text" id="p3" /></p>
+      <p>Servilletas <input type="text" id="p4" /></p>
+      <p>Pan <input type="text" id="p5" /></p>
+      <button onclick="calculo()">Calcular</button>
+		    <p id="subtotal"></p>
+		    <p id="igic"></p>
+		    <p id="total"></p>
+        <script src="productos.js"></script>
     </body>
-
-</html>
