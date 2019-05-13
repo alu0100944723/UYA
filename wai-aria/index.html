@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Club de Lectura</title>
+
+  <link rel="icon" href="imagenes/mifavicon.ico">
+
+  <link rel="stylesheet" href="css/index.css">
+  <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <!-- Para iconos de materialize -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    
+</head>
+
+<body align="center">
+
+  <!-- Navbar goes here -->
+  <header class="fondo_cab">
+    <h1 class="h1_index" > Club de Lectura </h1>
+    <!-- Buscador no funciona porque esto es un prototipo -->
+    <form class=form_index" action="intro.html" method="get">
+      <input class="buscador" type="search" name="q" placeholder="Busca libros,autores,eventos.." required="required" aria-required="true">
+      <button aria-label="Buscar" type="submit">Buscar</button>
+    </form>
+  </header>
+    <!-- Page Layout here -->
+  <main>
+    <div class="row">
+
+      <div class="col s12 m4 l3" tabindex="0"> <!-- Note that "m4 l3" was added -->
+        <!-- Grey navigation panel
+
+              This content will be:
+          3-columns-wide on large screens,
+          4-columns-wide on medium screens,
+          12-columns-wide on small screens  -->
+
+          <!-- Eventos-->
+  <h2 >Proximos eventos</h2>
+  <table align="center">
+    <tr>
+      <th>Proximos eventos</th>
+      <th>Fecha</th>
+      <th>Asistiré</th>
+    </tr>
+    <tr>
+      <td>Feria del libro Madrid</td>
+      <td>31 Mayo-16 Junio</td>
+      <td>
+        <form>
+          <p>
+          <label>
+            <input type="checkbox"/>
+            <span>Si</span>
+          </label>
+          </p>
+          <p>
+          <label>
+            <input type="checkbox"/>
+            <span>No</span>
+          </label>
+          </p>
+        </form>
+      </td>
+    </tr>
+    <tr>
+      <td>Sant Jordi</td>
+      <td>23 Abril</td>
+      <td>
+        <form>
+          <p>
+          <label>
+            <input type="checkbox"/>
+            <span>Si</span>
+          </label>
+          </p>
+          <p>
+          <label>
+            <input type="checkbox"/>
+            <span>No</span>
+          </label>
+          </p>
+        </form>
+      </td>
+    </tr>
+  </table>
+ 
+  <form class=form_index" action="index.html" method="get">
+  <button aria-label="Confirmar y enviar"><a class="waves-effect waves-teal btn-flat" class="boton_conf"> <i class="material-icons">radio_button_checked
+  </i> Confirmar</a></button>
+  </form>
+
+      </div>
+
+      <div class="col s12 m8 l9" tabindex="0"> <!-- Note that "m8 l9" was added -->
+        <!-- Teal page content
+
+              This content will be:
+          9-columns-wide on large screens,
+          8-columns-wide on medium screens,
+          12-columns-wide on small screens  -->
+
+          <h2 class="h2_index"> ¡Bienvenidos a nuestra página web! </h2>
+  <p class="p_index">
+    Aquí tendrás tu <strong>propia biblioteca</strong>,<br/> gracias a que podrás ordenar tus libros en listas,<br/> así como encontrar autores e información sobre reuniones<br/> de lecturas, firmas de libros y... ¡mucho más!<br/>
+    ¿A qué esperar para unirte?</p>
+
+  <!-- Esta frase de abajo la puse porque las etiquetas dfn y abbr aparecen en las diapositivas -->
+
+  <form class=form_index" action="registro.html" method="get">
+  <button aria-label="Registrarse" class="button">Registrarse
+  <div class="button__horizontal"></div>
+  <div class="button__vertical"></div>
+  </button>
+  </form>
+  O
+
+<form class=form_index" action="login.html" method="get">
+<button aria-label="Iniciar sesion" class="button">Iniciar sesión
+  <div class="button__horizontal"></div>
+  <div class="button__vertical"></div>
+</button>
+</form>
+  <dfn>
+  <h3>Porque...</h3>
+   “Carecer de libros propios es el colmo de la miseria  "</dfn>
+  <strong><abbr tittle = "Benjamin Franklin">Benjamin F.</abbr></strong>
+  <br>
+  </br>
+
+      </div>
+
+    </div>
+  
+  
+    <div class="container" >
+ 
+  
+  <!------Formulario de contacto -------------->
+  <h3 tabindex="0" class="h2_sug">¿Alguna duda o sugerencia?¡Contacta con nosotros!</h3>
+  <form class=form_index" action="index.html" method="get">
+    <input type="text" name="lname" placeholder="Escribir email" required maxlength="20" aria-required="true"><br><br>
+    <span id="count" aria-live="polite"></span> 
+    <textarea name="mensaje" rows="10" cols="30" placeholder="Escribe aquí tus dudas o sugerencias." aria-label="Escribe aqui tus dudas o sugerencias"></textarea><br><br> Selecciona el tema de la consulta:<br>
+  <select class="browser-default" aria-expanded=true>
+    <option value="" disabled selected>Seleccionar</option>
+    <option aria-label="Problemas" value="1">Problemas</option>
+    <option aria-label="Dudas" value="2">Dudas</option>
+    <option aria-label="Sugerencias" value="3">Sugerencias</option>
+  </select>
+    <br>
+    <p>
+    <label>
+    <input type="checkbox" aria-required="true" required><span>He leído y acepto la política de privacidad y cookies</span><br><br>
+    </label>
+    <button aria-label="Confirmar y enviar" type="submit" >Enviar</button>
+    </p>
+    </form>
+    </div>
+  </main>
+    <footer tabindex="0">
+      <address>Avenida La Trinidad. Número 14. Club de Lectura.<br>Número de teléfono: 922340729<br></address>
+      Página web hecha por: Carmen Castro González, Carolina Candelaria Álvarez Martín y María Candelaria Fariña Rodríguez.
+       <h3>&copy&nbspCopyright UYA - 2019
+       </h3>
+	</footer>
+
+  <script>
+    document.querySelector('[tabindex="-1"]').focus()
+  </script>
+
+</body>
+
+</html>

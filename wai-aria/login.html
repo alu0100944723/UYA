@@ -1,0 +1,28 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Iniciar Sesión</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/login.css">
+      <link rel="icon" href="imagenes/mifavicon.ico">
+      <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+      <script src="firebase.js"></script>
+</head>
+<body>
+<div class="container mlogin">
+<h1>Iniciar Sesión</h1>
+<form id="Inicio">
+
+<label for="email_usuario" >Correo electrónico<br/>
+<input type="email" name="email_usuario" id="email_usuario" aria-labelledby="email_usuario" aria-required="true" aria-invalid="false" aria-describedby="Aviso" required>
+<br/>
+<label for="contraseña_usuario">Contraseña<br />
+<input id="contraseña_usuario" type="password" name="contraseña_usuario"aria-labelledby="contraseña_usuario" aria-required="true" aria-invalid="false" aria-describedby="Aviso"  required>
+<div class="error" id="Aviso" role="alert"></div> 
+
+<button id="submit" onclick="signin()">Entrar</button>
+<button id="volver" onclick="location.href='index.html'">Volver a Inicio</button>
+
+<p class="regtext">¿No estás registrado? <a href="registro.html">Registrate Aquí</a></p>
+</div>
+</body>

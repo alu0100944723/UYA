@@ -1,0 +1,39 @@
+<head>
+  <meta charset="UTF-8">
+  <title>Registrarse</title>
+
+  <link rel="icon" href="imagenes/mifavicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/login.css">
+  <script src="https://www.gstatic.com/firebasejs/5.10.0/firebase.js"></script>
+  <script src="firebase.js"></script>
+</head>
+<body>
+<div class="container mregister" id="div">
+<h1>Registrarse</h1>
+<form id="Registro" name="Registro">
+
+    <label for="nombre_usuario">Nombre<br>
+    <input id="nombre_usuario" type="text" name="nombre_usuario" aria-labelledby="nombre_usuario" aria-required="true" aria-invalid="false" aria-describedby="Aviso" required></label><br>
+
+      <label for="email_usuario">Correo electrónico<br>
+      <input type="email" name="email_usuario" id="email_usuario" aria-labelledby="email_usuario" aria-required="true" aria-invalid="false" aria-describedby="Aviso" required></label>
+<br/>
+
+    <label for="contraseña_usuario">Contraseña<br>
+    <input id="contraseña_usuario" type="password" name="contraseña_usuario" aria-labelledby="contraseña_usuario" aria-required="true" aria-invalid="false" aria-describedby="Aviso"  required/></label><br>
+    <label for="Repetir Contraseña">Repite la Contraseña<br>
+    <input id="rep_contraseña_usuario" type="password" name="rep_contraseña_usuario" aria-labelledby="rep_contraseña_usuario" aria-required="true" aria-invalid="false" aria-describedby="Aviso" required/></label><br>
+    <label for="¿Eres un autor?">¿Eres un autor?"<br>
+    <select id="es_autor" name="es_autor">
+      <option>Sí</option>
+      <option>No</option>
+    </select></label><br>
+    <p>
+    <button id="submit" name="submit" onclick="storeData()">Enviar</button>
+    <button id="reset" name="reset" type="reset">Borrar</button>
+    </p>
+<p class="regtext">¿Ya tienes una cuenta? <a href="login.html" >Entra Aquí</a></p>
+</form>
+</div>
+</body>
