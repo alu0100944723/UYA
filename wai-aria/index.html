@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
   <title>Club de Lectura</title>
 
   <link rel="icon" href="imagenes/mifavicon.ico">
+
+  <script src="index_firebase.js"></script>
 
   <link rel="stylesheet" href="css/index.css">
   <!-- Compiled and minified CSS -->
@@ -17,7 +20,7 @@
   <!-- Para iconos de materialize -->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    
+
 </head>
 
 <body align="center">
@@ -25,14 +28,20 @@
   <!-- Navbar goes here -->
   <header class="fondo_cab">
     <h1 class="h1_index" > Club de Lectura </h1>
-    <!-- Buscador no funciona porque esto es un prototipo -->
-    <form class=form_index" action="intro.html" method="get">
-      <input class="buscador" type="search" name="q" placeholder="Busca libros,autores,eventos.." required="required" aria-required="true">
-      <button aria-label="Buscar" type="submit">Buscar</button>
-    </form>
+    <nav>
+   <div class="nav-wrapper fondo_div">
+     <a href="#" class="brand-logo"><img src="imagenes/mifavicon.ico"></a>
+     <ul id="nav-mobile" class="right hide-on-med-and-down">
+       <li><a class="li_cab" href="sass.html">Sass</a></li>
+       <li><a class="li_cab"href="badges.html">Components</a></li>
+       <li><a class="li_cab"href="collapsible.html">JavaScript</a></li>
+     </ul>
+   </div>
+ </nav>
   </header>
     <!-- Page Layout here -->
   <main>
+
     <div class="row">
 
       <div class="col s12 m4 l3" tabindex="0"> <!-- Note that "m4 l3" was added -->
@@ -59,13 +68,15 @@
           <p>
           <label>
             <input type="checkbox"/>
-            <span>Si</span>
+            <span role="checkbox" aria-checked="false" onclick="changeCheckbox()" onKeyPress="changeCheckbox()"
+             aria-labelledby="chk1-label">Si</span>
           </label>
           </p>
           <p>
           <label>
             <input type="checkbox"/>
-            <span>No</span>
+            <span role="checkbox" aria-checked="false" onclick="changeCheckbox()" onKeyPress="changeCheckbox()"
+             aria-labelledby="chk1-label">No</span>
           </label>
           </p>
         </form>
@@ -79,28 +90,30 @@
           <p>
           <label>
             <input type="checkbox"/>
-            <span>Si</span>
+            <span role="checkbox" aria-checked="false" onclick="changeCheckbox()" onKeyPress="changeCheckbox()"
+             aria-labelledby="chk1-label">Si</span>
           </label>
           </p>
           <p>
           <label>
             <input type="checkbox"/>
-            <span>No</span>
+            <span role="checkbox" aria-checked="false" onclick="changeCheckbox()" onKeyPress="changeCheckbox()"
+             aria-labelledby="chk1-label">No</span>
           </label>
           </p>
         </form>
       </td>
     </tr>
   </table>
- 
-  <form class=form_index" action="index.html" method="get">
+
+  <form class="form_index" action="index.html" method="get">
   <button aria-label="Confirmar y enviar"><a class="waves-effect waves-teal btn-flat" class="boton_conf"> <i class="material-icons">radio_button_checked
   </i> Confirmar</a></button>
   </form>
 
       </div>
 
-      <div class="col s12 m8 l9" tabindex="0"> <!-- Note that "m8 l9" was added -->
+      <div class="col s12 m8 l8" tabindex="0"> <!-- Note that "m8 l9" was added -->
         <!-- Teal page content
 
               This content will be:
@@ -115,7 +128,7 @@
 
   <!-- Esta frase de abajo la puse porque las etiquetas dfn y abbr aparecen en las diapositivas -->
 
-  <form class=form_index" action="registro.html" method="get">
+  <form class="form_index" action="registro.html" method="get">
   <button aria-label="Registrarse" class="button">Registrarse
   <div class="button__horizontal"></div>
   <div class="button__vertical"></div>
@@ -123,7 +136,7 @@
   </form>
   O
 
-<form class=form_index" action="login.html" method="get">
+<form class="form_index" action="login.html" method="get">
 <button aria-label="Iniciar sesion" class="button">Iniciar sesión
   <div class="button__horizontal"></div>
   <div class="button__vertical"></div>
@@ -139,16 +152,16 @@
       </div>
 
     </div>
-  
-  
+
+
     <div class="container" >
- 
-  
+
+
   <!------Formulario de contacto -------------->
   <h3 tabindex="0" class="h2_sug">¿Alguna duda o sugerencia?¡Contacta con nosotros!</h3>
-  <form class=form_index" action="index.html" method="get">
+  <form class="form_index" action="index.html" method="get">
     <input type="text" name="lname" placeholder="Escribir email" required maxlength="20" aria-required="true"><br><br>
-    <span id="count" aria-live="polite"></span> 
+    <span id="count" aria-live="polite"></span>
     <textarea name="mensaje" rows="10" cols="30" placeholder="Escribe aquí tus dudas o sugerencias." aria-label="Escribe aqui tus dudas o sugerencias"></textarea><br><br> Selecciona el tema de la consulta:<br>
   <select class="browser-default" aria-expanded=true>
     <option value="" disabled selected>Seleccionar</option>
@@ -158,9 +171,12 @@
   </select>
     <br>
     <p>
-    <label>
-    <input type="checkbox" aria-required="true" required><span>He leído y acepto la política de privacidad y cookies</span><br><br>
-    </label>
+      <p>
+      <label>
+        <input type="checkbox" />
+        <span role="checkbox"  aria-checked="false" aria-required="true" onclick="changeCheckbox()" onKeyPress="changeCheckbox()"
+         aria-labelledby="chk1-label" required>He leído y acepto la política de privacidad y cookies</span>
+      </label>
     <button aria-label="Confirmar y enviar" type="submit" >Enviar</button>
     </p>
     </form>
@@ -170,12 +186,8 @@
       <address>Avenida La Trinidad. Número 14. Club de Lectura.<br>Número de teléfono: 922340729<br></address>
       Página web hecha por: Carmen Castro González, Carolina Candelaria Álvarez Martín y María Candelaria Fariña Rodríguez.
        <h3>&copy&nbspCopyright UYA - 2019
-       </h3>
+       </h3><br><br>
 	</footer>
-
-  <script>
-    document.querySelector('[tabindex="-1"]').focus()
-  </script>
 
 </body>
 

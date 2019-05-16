@@ -1,11 +1,29 @@
 .fondo_cab{
 	margin-top: 0px;
 	background: url(../imagenes/cabecera.jpg);
+	color:black;
+}
+
+.fondo_div{
+
+	background: url(../imagenes/cabecera.jpg);
+	color: black;
+}
+
+.li_cab{
+	color:black;
+	-webkit-text-stroke: 0.5px white;
+	font-size: 30px;
+}
+
+img{
+	width: 30px;
+	height: 30px;
 }
 
 .div_index2{
 	background: url(../imagenes/index_2.jpg);
-	
+
 }
 
 .buscador {
@@ -19,12 +37,12 @@
 }
 
 body {
-	
+
 	justify-content: center;
 	align-items: center;
 	height: 100vh;
 	background: #fcf3ec;
-	
+
 }
 
 .boton_conf {
@@ -40,7 +58,7 @@ body {
 
 }
 .h2_index {
-	
+
 	font-size: 40px;
 }
 
@@ -57,14 +75,14 @@ div {
 }
 
 form {
-	
+
 	font-size: 16px;
 	line-height: 1;
 	padding: 3px;
 	margin: 5px;
 	outline: none;
 	border: 1px solid #d9d9d9;
-	
+
 
 }
 .h1_login{
@@ -76,10 +94,10 @@ input
 }
 
 .button {
-	
+
 	--offset: 10px;
 	--border-size: 2px;
-	
+
 	padding: 1.5em 3em;
 	appearance: none;
 	border: 0;
@@ -93,11 +111,11 @@ input
 	border-radius: 0;
 	box-shadow: inset 0 0 0 var(--border-size) currentcolor;
 	transition: background .8s ease;
-	
+
 	&:hover {
 		background: rgba(100, 0, 0, .03);
 	}
-	
+
 	&__horizontal,
 	&__vertical {
 		position: absolute;
@@ -107,19 +125,19 @@ input
 		left: var(--vertical-offset, 0);
 		transition: transform .8s ease;
 		will-change: transform;
-		
+
 		&::before {
 			content: '';
 			position: absolute;
 			border: inherit;
 		}
 	}
-	
+
 	&__horizontal {
 		--vertical-offset: calc(var(--offset) * -1);
 		border-top: var(--border-size) solid currentcolor;
 		border-bottom: var(--border-size) solid currentcolor;
-		
+
 		&::before {
 			top: calc(var(--vertical-offset) - var(--border-size));
 			bottom: calc(var(--vertical-offset) - var(--border-size));
@@ -127,16 +145,16 @@ input
 			right: calc(var(--vertical-offset) * -1);
 		}
 	}
-	
+
 	&:hover &__horizontal {
 		transform: scaleX(0);
 	}
-	
+
 	&__vertical {
 		--horizontal-offset: calc(var(--offset) * -1);
 		border-left: var(--border-size) solid currentcolor;
 		border-right: var(--border-size) solid currentcolor;
-		
+
 		&::before {
 			top: calc(var(--horizontal-offset) * -1);
 			bottom: calc(var(--horizontal-offset) * -1);
@@ -144,11 +162,11 @@ input
 			right: calc(var(--horizontal-offset) - var(--border-size));
 		}
 	}
-	
+
 	&:hover &__vertical {
 		transform: scaleY(0);
 	}
-	
+
 }
 
 footer{
@@ -157,3 +175,15 @@ footer{
 
 [aria-checked="true"] { font-weight: bold; }
 [aria-checked="true"]:before { background-image: url(checked.gif); }
+
+[role="checkbox"] {
+    padding:5px;
+}
+
+[aria-checked="true"]::before {
+    content: "[x]";
+}
+
+[aria-checked="false"]::before {
+    content: "[ ]";
+}
