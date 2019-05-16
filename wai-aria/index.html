@@ -27,14 +27,14 @@
 
   <!-- Navbar goes here -->
   <header class="fondo_cab">
-    <h1 class="h1_index" > Club de Lectura </h1>
+    <a href="#"><h1 class="h1_index" > Club de Lectura </h1></a>
     <nav>
-   <div class="nav-wrapper fondo_div">
-     <a href="#" class="brand-logo"><img src="imagenes/mifavicon.ico"></a>
+   <div class="nav-wrapper" id="fondo_div" tabindex="0">
+     <a href="#" class="brand-logo center" id="inicio"><img src="imagenes/mifavicon.ico"/>Inicio</a>
      <ul id="nav-mobile" class="right hide-on-med-and-down">
-       <li><a class="li_cab" href="sass.html">Sass</a></li>
-       <li><a class="li_cab"href="badges.html">Components</a></li>
-       <li><a class="li_cab"href="collapsible.html">JavaScript</a></li>
+       <li><a class="li_cab" tabindex="0">Contacto</a></li>
+       <li><a class="li_cab" tabindex="0">Añadir Libro</a></li>
+       <li><a class="li_cab" tabindex="0">Registrarse</a></li>
      </ul>
    </div>
  </nav>
@@ -44,14 +44,7 @@
 
     <div class="row">
 
-      <div class="col s12 m4 l3" tabindex="0"> <!-- Note that "m4 l3" was added -->
-        <!-- Grey navigation panel
-
-              This content will be:
-          3-columns-wide on large screens,
-          4-columns-wide on medium screens,
-          12-columns-wide on small screens  -->
-
+      <div class="col s12 m4 l3" tabindex="0"> 
           <!-- Eventos-->
   <h2 >Proximos eventos</h2>
   <table align="center">
@@ -65,20 +58,22 @@
       <td>31 Mayo-16 Junio</td>
       <td>
         <form>
+          <fieldset>
           <p>
           <label>
-            <input type="checkbox"/>
-            <span role="checkbox" aria-checked="false" onclick="changeCheckbox()" onKeyPress="changeCheckbox()"
+            <input type="radio" name="group1" />
+            <span role="radio"aria-checked="false" onclick="changeCheckbox()" onKeyPress="changeCheckbox()"
              aria-labelledby="chk1-label">Si</span>
           </label>
           </p>
           <p>
           <label>
-            <input type="checkbox"/>
-            <span role="checkbox" aria-checked="false" onclick="changeCheckbox()" onKeyPress="changeCheckbox()"
+            <input type="radio"  name="group1" />
+            <span role="radio" aria-checked="false" onclick="changeCheckbox()" onKeyPress="changeCheckbox()"
              aria-labelledby="chk1-label">No</span>
           </label>
           </p>
+        </fieldset>
         </form>
       </td>
     </tr>
@@ -87,20 +82,22 @@
       <td>23 Abril</td>
       <td>
         <form>
+          <fieldset>
           <p>
           <label>
-            <input type="checkbox"/>
-            <span role="checkbox" aria-checked="false" onclick="changeCheckbox()" onKeyPress="changeCheckbox()"
+            <input type="radio" name="group2" />
+            <span role="radio" aria-checked="false" onclick="changeCheckbox()" onKeyPress="changeCheckbox()"
              aria-labelledby="chk1-label">Si</span>
           </label>
           </p>
           <p>
           <label>
-            <input type="checkbox"/>
-            <span role="checkbox" aria-checked="false" onclick="changeCheckbox()" onKeyPress="changeCheckbox()"
+            <input type="radio"  name="group2" />
+            <span role="radio" aria-checked="false" onclick="changeCheckbox()" onKeyPress="changeCheckbox()"
              aria-labelledby="chk1-label">No</span>
           </label>
           </p>
+          </fieldset>
         </form>
       </td>
     </tr>
@@ -114,12 +111,6 @@
       </div>
 
       <div class="col s12 m8 l8" tabindex="0"> <!-- Note that "m8 l9" was added -->
-        <!-- Teal page content
-
-              This content will be:
-          9-columns-wide on large screens,
-          8-columns-wide on medium screens,
-          12-columns-wide on small screens  -->
 
           <h2 class="h2_index"> ¡Bienvenidos a nuestra página web! </h2>
   <p class="p_index">
@@ -134,7 +125,6 @@
   <div class="button__vertical"></div>
   </button>
   </form>
-  O
 
 <form class="form_index" action="login.html" method="get">
 <button aria-label="Iniciar sesion" class="button">Iniciar sesión

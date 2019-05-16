@@ -4,7 +4,7 @@
 	color:black;
 }
 
-.fondo_div{
+#fondo_div{
 
 	background: url(../imagenes/cabecera.jpg);
 	color: black;
@@ -171,6 +171,7 @@ input
 
 footer{
 	background-color: #e6ccb3;
+	text-align: center;
 }
 
 [aria-checked="true"] { font-weight: bold; }
@@ -186,4 +187,9 @@ footer{
 
 [aria-checked="false"]::before {
     content: "[ ]";
+}
+#inicio{
+	color:black;
+	-webkit-text-stroke: 0.5px white;
+	font-size: 30px;
 }
